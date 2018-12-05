@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="theme.css" type="text/css">
+  <title>DesenvolvimentoPrimeiroAnoVida</title>
 </head>
 
 <body class="bg-light border-0 border-light h-25" style="">
-  <div class="py-0 bg-info" style=""> //retirar container <div class="row">
+  <div class="py-0 bg-light" style="">
+    <div class="row">
       <div class="p-md-5 d-flex flex-column justify-content-center col-lg-5 bg-light" style="">
         <h3 class="display-6 shadow-lg text-muted text-center" style=""><b>Desenvolvimento infantil</b></h3>
         <p style="" class="text-center text-success"><b><i>A Magia do 1º ano de vida</i></b><br><br>Acompanhe o desenvolvimento do seu bebé nesta fase crucial do seu desenvolvimento</p>
@@ -21,7 +23,8 @@
             </div>
             <div class="carousel-item"> <img class="d-block img-fluid w-100" src="imagens/wes-hicks-537126-unsplash.jpg">
             </div>
-          </div> <a class="carousel-control-next" href="#carousel" role="button" data-slide="next"> <span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span> </a>
+          </div> <a class="carousel-control-next" href="#carousel" role="button" data-slide="next"> <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span> </a>
         </div>
       </div>
     </div>
@@ -63,7 +66,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-6 col-lg-3 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle shadow-lg" src="imagens/filip-mroz-767365-unsplash.jpg" width="200" alt="Card image cap" height="100"><a class="btn btn-link shadow" href="#" style="">0-3 Meses</a>
+        <div class="col-6 col-lg-3 p-4">
+          <img class="img-fluid d-block mb-3 mx-auto rounded-circle shadow-lg" src="imagens/filip-mroz-767365-unsplash.jpg" width="200" alt="Card image cap" height="100">
+          <a class="btn btn-link shadow" href="javascript:window.open('0-3-motoras.html', '_blank', 'width=1200,height=1500,scrollbars=yes,top=100,left=100')">0-3 Meses</a>
         </div>
         <div class="col-6 col-lg-3 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle shadow-lg" src="imagens/filip-mroz-767365-unsplash.jpg" width="4000" alt="Card image cap" height="4000"><a class="btn btn-link shadow-lg" href="#">3-6 Meses</a>
         </div>
@@ -79,8 +84,9 @@
   </div>
   <div class="">
     <div class="row" style="" id="contactos">
-      <div class="googleMap" style="background-color:#0d0d0d;padding-top:0px;">
-      </div><iframe allowfullscreen="" frameborder="0" width="400%" height="350" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaEw6o8OhJvRQnTF3gI_tibMejtfasOlY&amp;q=braga&amp;zoom=15"></iframe>
+      <div id="googleMap" style="width:100%;height:400px;"></div>
+      <script src="mapa.js"></script>
+      <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOIPqUEVOV34GciAcEw8cATTVxKYTcT9c&amp;callback=myMap" type="text/javascript"></script>
       <div class="container">
         <div class="row">
           <div class="mx-auto p-4 col-md-5" style="" data-pingendo-transient="">
@@ -92,8 +98,10 @@
             <h2 class="mb-4">Dê-nos a sua sugestão</h2>
             <div class="form-group"><input type="email" class="form-control" id="form31" placeholder="Nome"></div>
             <form>
-              <div class="form-group"> <input type="email" class="form-control" id="form31" placeholder="profissão/parentesco"> </div>
-              <div class="form-group"> <textarea class="form-control" id="form32" rows="3" placeholder="sugestões/duvidas"></textarea> </div> <button type="submit" class="btn btn-primary">Enviar</button>
+              <div class="form-group"> <input type="email" class="form-control" id="form31" placeholder="profissão/parentesco">
+              </div>
+              <div class="form-group"> <textarea class="form-control" id="form32" rows="3" placeholder="sugestões/duvidas"></textarea>
+              </div> <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
           </div>
         </div>

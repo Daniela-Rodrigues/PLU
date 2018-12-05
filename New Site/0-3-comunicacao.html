@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Competências comunicação do bebé</title>
+</head>
+
+<body>
+    <h2>Competências comunicação do bebé</h2>
+    <p>
+        Assinale a opção (sim ou não) que caracteriza o desempenho do seu bebé em cada uma das competências esperadas
+        neste
+        trimestre. Realça-se que as competências referidas são tipicamente evidenciadas no final do trimestre, pelo que
+        este
+        pode ser um guia de algumas etapas a potenciar ao longo deste.
+    </p>
+
+    <p>
+        1. Mostra interesse em rostos (sorriso social)
+        <br>
+        <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM
+        <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO
+    </p>
+
+    <p>
+        2. Acalma ou sorri em resposta ao som ou voz familiar
+        <br>
+        <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim"> SIM
+        <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO
+    </p>
+
+    <p>
+        3. Chora de forma diferente para diferentes necessidades (por exemplo, com fome, cansado).<br>
+        <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim"> SIM
+        <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO
+    </p>
+
+
+    <button onClick="mostraResultado()">SUBMETER</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function mostraResultado() {
+            const resultado = document.getElementById("resultado")
+            const _0_3_1 = document.getElementById("_0_3_1")
+            const _0_3_2 = document.getElementById("_0_3_2")
+            const _0_3_3 = document.getElementById("_0_3_3")
+
+            let contSim = 0,
+                contNao = 0
+
+            _0_3_1.checked ? contSim++ : contNao++
+            _0_3_2.checked ? contSim++ : contNao++
+            _0_3_3.checked ? contSim++ : contNao++
+
+
+
+            // Todas SIM
+            if (contSim == 3) {
+                resultado.innerHTML =
+                    "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular a interação e o contacto ocular de forma a potenciar as etapas seguintes do desenvolvimento."
+            } else if (contNao == 3) {
+                resultado.innerHTML =
+                    "Aconselha-se uma avaliação com Terapeuta da Fala da área do desenvolvimento infantil para dicas específicas e adequadas ao seu bebé! <br>Veja também as nossas dicas: Dica 1 + Dica 2"
+            } else {
+                resultado.innerHTML =
+                    "Dica 1: Sempre que o bebé estiver no colo, observe-o e procure que ele faça o mesmo consigo. Realize sons variados de forma a chamar à atenção para si.<br>Dica 2: Procure dar resposta a cada comportamento do seu bebé (som , sorriso, olhar). O ser humano nesta fase inicial do desenvolvimento aprende através da resposta a um comportamento (causa-efeito), assim se reforçarmos cada tomada de iniciativa, é esperado que estas aumentem em quantidade e qualidade."
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>

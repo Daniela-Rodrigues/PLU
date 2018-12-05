@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Competências motoras do bebé</title>
+</head>
+
+<body style="	background-image: url(imagens/o-3 motor.jpeg);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+  <h2 style="	background-image: url(imagens/o-3 motor.jpeg);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">Competências motoras do bebé</h2>
+  <p class="bg-warning text-body" style=""> Assinale a opção (sim ou não) que caracteriza o desempenho do seu bebé em cada uma das competências esperadas neste trimestre. Realça-se que as competências referidas são tipicamente evidenciadas no final do trimestre, pelo que este pode ser um guia de algumas etapas a potenciar ao longo deste. </p>
+  <p> 1. Em decúbito dorsal (deitado de barriga para cima) mantém a cabeça na linha média para ver/seguir caras ou brinquedos<br>
+    <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO </p>
+  <p> 2. Em decúbito dorsal (deitado de barriga para cima) leva as duas mãos à boca<br>
+    <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim"> SIM <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO </p>
+  <p> 3. Permanece em decúbito ventral (deitado de barriga para baixo) com apoio nos antebraços e levanta a cabeça (extensão ativa de tronco) por curtos períodos de tempo.<br>
+    <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim"> SIM <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO </p>
+  <p> 4. Apresenta mobilidade espontânea nos 4 membros quando está desperto e bem-disposto. Começa a abrir e fechar as mãos voluntariamente<br>
+    <input type="radio" id="_0_3_4" name="0_3_4" value="0_3_4_sim"> SIM <input type="radio" name="0_3_4" value="0_3_4_nao"> NÃO </p>
+  <button onclick="mostraResultado()" style="">SUBMETER</button>
+  <p id="resultado"></p>
+  <script>
+    function mostraResultado() {
+      const resultado = document.getElementById("resultado")
+      const _0_3_1 = document.getElementById("_0_3_1")
+      const _0_3_2 = document.getElementById("_0_3_2")
+      const _0_3_3 = document.getElementById("_0_3_3")
+      const _0_3_4 = document.getElementById("_0_3_4")
+      let contSim = 0,
+        contNao = 0
+      _0_3_1.checked ? contSim++ : contNao++
+      _0_3_2.checked ? contSim++ : contNao++
+      _0_3_3.checked ? contSim++ : contNao++
+      _0_3_4.checked ? contSim++ : contNao++
+      if (contSim == 4) {
+        resultado.innerHTML = "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular o tempo (períodos) em que permanece de barriga para baixo que potenciará o seu desenvolvimento motor e as etapas seguintes!"
+      } else if (contNao == 3 || contNao == 4) {
+        resultado.innerHTML = "Aconselha-se uma avaliação com fisioterapeuta da área do desenvolvimento infantil para dicas específicas e adequadas ao seu bebé!<br>Veja também as nossas dicas: <br>Dica 1 + Dica 2 + <br>Dica 3: Prepare um espaço destinado ao seu bebé no chão(p.e.parque) e comece a coloca - lo por pequenos período,tanto em decúbito ventral como decúbito dorsal ou mesmo lateral, com ajuda de almofadas e sempre com supervisão. A vivência do movimento numa superfície estável irá potenciar o controlo postural do seu bebé."
+      } else {
+        resultado.innerHTML = "Dica 1: Associe o decúbito ventral (deitado de barriga para baixo) às rotinas do seu bebé (p.e. na muda da fralda, após o banho para colocar creme nas costas, sempre que muda a fralda, enquanto brinca no seu colo sobre os membros inferiores) aumentando gradualmente o tempo em que permanece nesta posição. Isto irá contribuir para o controlo de cabeça e tronco.<br> Dica 2: No colo alterne entre os 2 braços e varie os posicionamentos (barriga para baixo, de lado, deitado sobre o seu peito quando está na cama ou sofá…) Aproveite a almofada de amamentação para posicionar o seu bebé em decúbito dorsal (de barriga para cima) e promover a organização das mãos na linha média. "
+      }
+      resultado.innerHTML += "<p><center><button onClick=location.href=\"0-3-sensoriais.html\">Saltar para as Competências sensoriais</button></center></p>"
+    }
+  </script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+</body>
+
+</html>
