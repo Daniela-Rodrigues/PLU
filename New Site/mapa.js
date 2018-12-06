@@ -10,10 +10,12 @@ function myMap() {
     const map = new google.maps.Map(
         document.getElementById("googleMap"), 
         mapProp)
-        
 
-        //janela de informação
-        const infowindow = new google.maps.InfoWindow({content:"Equipa Desenvolvimento Infantil em Braga - Contacte-nos!"})
+
+    
+        var contentString = '<div id="content"><div id="siteNotice"></div>'+
+        '<h3 id="firstHeading" class="firsttHeading">Equipa Desenvolvimento Infantil em Braga - Contacte-nos</h1>'
+        var infowindow = new google.maps.InfoWindow({ content: contentString, maxWidth: 450 });
         const marker = new google.maps.Marker({
             position:myLocation,
             map:map,
