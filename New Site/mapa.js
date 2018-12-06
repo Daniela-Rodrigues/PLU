@@ -12,10 +12,9 @@ function myMap() {
         mapProp)
 
 
-    
-        var contentString = '<div id="content"><div id="siteNotice"></div>'+ '<h4 >Equipa Desenvolvimento Infantil em Braga!<br> Contacte-nos</h4>'
+        const contentString = '<div id="content"><div id="siteNotice"></div>'+ '<h5 >Equipa Desenvolvimento Infantil em Braga!<br> Contacte-nos</h5>'
 
-        var infowindow = new google.maps.InfoWindow({ content: contentString, maxWidth: 335,});
+        const infowindow = new google.maps.InfoWindow({ content: contentString, maxWidth: 330,});
         const marker = new google.maps.Marker({
             position:myLocation,
             map:map,

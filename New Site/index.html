@@ -325,36 +325,61 @@
             </div>
           </div>
         </div>
-        <script src="mapa.js"></script>
-        <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADrxmXeX9ja6oB_VFEFWxiAKLwjCtsL8Q&amp;callback=myMap" type="text/javascript"></script>
-        <div class="container">
-          <div class="row">
-            <div class="mx-auto p-4 col-md-5" style="">
-              <h4 class="mb-1 bg-info" id="contacto" contenteditable="true">Equipa Terapêutica Especialista em Desenvolvimento infantil</h4>
-              <p class="text-left lead"><b>Terapeuta Ocupacional<br>Terapeuta da Fala<br>Fisioterapeuta<br><br></b><br></p>
-            </div>
-            <div class="mx-auto p-4 col-md-6">
-              <h4 class="mb-4" contenteditable="true">Contacte-nos para agendamento</h4>
-              <div class="form-group"><input type="text" class="form-control form-control-lg" id="form31" placeholder="nome" required="required"></div>
-              <form>
-                <div class="form-group"> <input type="email" class="form-control form-control-lg" id="form31" placeholder="email" required="required">
-                </div>
-                <div class="form-group"> <textarea class="form-control form-control-lg" id="form31" rows="3" name="informações" placeholder="Comentários:"></textarea>
-                </div> <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="border-right-0 border-left-0 text-body">
-        <div class="container">
-          <div class="footer-basic" style="background-color:#0d0d0d;">
+      <script src="mapa.js"></script>
+      <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADrxmXeX9ja6oB_VFEFWxiAKLwjCtsL8Q&amp;callback=myMap" type="text/javascript"></script>
+      <div class="container">
+        <div class="row">
+          <div class="mx-auto p-4 col-md-5" style="">
+            <h5 id="contacto" class="text-center"><b>Equipa Terapêutica Especialista em Desenvolvimento infantil</b></h5>
+            <p class="l text-center" contenteditable="true"><br>Terapeuta Ocupacional<br>Terapeuta da Fala<br>Fisioterapeuta<br><br><br></p>
+          </div>
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>EMAIL</title>
+            <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+                <script src ="email.js"></script>
+        
+        </head>
+        <body>
+                <div class="container">
+                  <div class="row">
+                    <div class="mx-auto p-4 col-md-6" >
+                      <h4 class="text-center"><b>Contacte-nos para agendamento</b></h4>
+                      <form>
+                      <div class="form-group"><input type="text" class="form-control form-control-lg" id="txtName" placeholder="nome" required="required"></div>
+                   
+                        <div class="form-group"> <input type="email" class="form-control form-control-lg" id="textEmail" placeholder="email" required="required"> </div>
+                        <div class="form-group"> <textarea class="form-control form-control-lg" id="txtMessage" rows="4" name="informações" placeholder="Comentários:"></textarea>
+                      <p>Especialidade: <br><select id="selectGroup">
+                          <option value="selecionar">selecionar</option>
+                        <option value="Equipa de Desenvolvimento">EQUIPA DESENVOLVIMENTO INFANTIL</option>
+                        <option value="Terapia da Fala">TERAPIA DA FALA</option>
+                        <option value="Terapia Ocupacional">TERAPIA OCUPACIONAL</option>
+                        <option value="Fisioterapia">FISIOTERAPIA</option>
+                      </optgroup>
+                    </select>
+                  </p>
+                  <input type="button" value="ENVIAR" onclick="sendEmail()" style="" class="bg-primary form-control-lg">
+                </fieldset>
+              </form>
+        
+        </body>
+        </html>
           </div>
         </div>
       </div>
     </div>
-    <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+    <div class="border-right-0 border-left-0 text-body">
+      <div class="container">
+        <div class="footer-basic" style="background-color:#0d0d0d;">
+        </div>
+      </div>
+    </div>
   </div>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>
