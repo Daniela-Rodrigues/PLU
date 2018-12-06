@@ -18,7 +18,7 @@ $enable-print-styles:       true;
 // Colors
 
 $theme-colors: (
-  primary: #C1FFC1,
+  primary: #48D1CC,
   secondary: #4f70ce,
   light: #DCDCDC,
   dark: #151515,
@@ -37,7 +37,7 @@ $link-color: #12bbad;
 
 // Fonts
 $font-family-base: Comic Sans MS, cursive, sans-serif;
-$headings-font-family: Lucida Console, Monaco, monospace;
+$headings-font-family: Comic Sans MS, cursive, sans-serif;
 $display-font-family: $font-family-base;
 
 $headings-font-weight: 200;
@@ -72,9 +72,9 @@ html,body {
 
 
 .bg-gradient {
-  overflow: hidden;
-  color: color-yiq(map-get($theme-colors, 'primary'));
-  background: linear-gradient(-30deg, theme-color("secondary") 0%, theme-color("primary") 50%, theme-color("primary") 100%);
+	overflow: hidden;
+	color: color-yiq(map-get($theme-colors, 'primary'));
+	background: linear-gradient(-30deg, theme-color("secondary") 0%, theme-color("primary") 50%, theme-color("primary") 100%);
 }
 
 .filter-dark {
@@ -108,18 +108,19 @@ html,body {
 }
 
 .filter-color {
-  overflow: hidden;
-  position: relative;
-  color: color-yiq(map-get($theme-colors, 'primary'));
+	overflow: hidden;
+	position: relative;
+	color: color-yiq(map-get($theme-colors, 'primary'));
+	text-shadow: 0px 0px 2px black;
 	&:before {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(map-get($theme-colors, 'primary'), 0.75);
-  }
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		content: ' ';
+		background: rgba(map-get($theme-colors, 'primary'), 0.75);
+	}
 }
 
 .filter-gradient {
