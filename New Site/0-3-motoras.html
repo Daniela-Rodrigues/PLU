@@ -13,14 +13,21 @@
   <div class="bg-light filter-fade-in">
     <div class="container">
       <div class="row">
-        <div class="px-md-5 d-flex flex-column align-items-start justify-content-center p-1 col-md-6">
-          <h2 class="text-center p-1" style=""><i><b>Competências motoras do bebé</b></i></h2>
-          <p class="text-justify w-100">De seguida são apresentadas algumas competências esperadas para este trimestre. Realça-se que as competências referidas são tipicamente evidenciadas no final do trimestre, pelo que as mesmas também podem servir como guia de competpotenciar ao longo deste.&nbsp;<br>Assinale a opção que caracteriza o desempenho do seu bebé em cada uma das competências </p>
+        <div class="flex-column align-items-start justify-content-center col-lg">
+          <h1 class="text-center p-1 pt-3" style="" contenteditable="true"><i><b>Competências motoras do bebé</b></i></h1>
+          <p class="text-justify">As competências referidas são apenas um guia e refletem tipicamente competências evidenciadas no final do trimestre, pelo que podem também servir como guia de competências a potenciar ao longo deste.&nbsp;<br>No entanto, cada bebé tem um ritmo próprio!<br></p>
           <div class="row">
             <div class="col-md-12"> <i class="fa fa-stop-circle fa-3x mr-3 text-muted d-inline"></i> <i class="fa fa-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-stop-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-circle fa-3x ml-3 text-muted d-inline"></i> </div>
           </div>
         </div>
-        <div class="col-md-6"> <img class="d-block img-fluid mt-2 rounded-circle" src="imagens/filip-mroz-767365-unsplash.jpg"> </div>
+        <div class="col-md-5"> <img class="d-block img-fluid rounded mt-5" src="imagens/o-3 motor.jpeg"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="lead">Assinale a opção que caracteriza o desempenho do seu bebé em cada uma das competências:</p>
       </div>
     </div>
   </div>
@@ -28,14 +35,14 @@
     <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO </p>
   <p>
   </p>
-  <p class="shadow mx-2 py-1"> 2. Em decúbito dorsal (deitado de barriga para cima) leva as duas mãos à boca<br>
-    <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim"> SIM <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO </p>
+  <p class="mx-2 py-1 shadow"> 2. Em decúbito dorsal (deitado de barriga para cima) leva as duas mãos à boca<br>
+    <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim" required="required"> SIM <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO </p>
   <p class="mx-2 text-justify shadow bg-info py-1"> 3. Permanece em decúbito ventral (deitado de barriga para baixo) com apoio nos antebraços e levanta a cabeça (extensão ativa de tronco) por curtos períodos de tempo.<br>
-    <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim"> SIM <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO </p>
+    <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim" required="required"> SIM <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO </p>
   <p class="border-light shadow mx-2 py-1"> 4. Apresenta mobilidade espontânea nos 4 membros quando está desperto e bem-disposto. Começa a abrir e fechar as mãos voluntariamente<br>
-    <input type="radio" id="_0_3_4" name="0_3_4" value="0_3_4_sim"> SIM <input type="radio" name="0_3_4" value="0_3_4_nao"> NÃO </p>
+    <input type="radio" id="_0_3_4" name="0_3_4" value="0_3_4_sim" required="required"> SIM <input type="radio" name="0_3_4" value="0_3_4_nao"> NÃO </p>
   <button onclick="mostraResultado()" class="bg-primary">SUBMETER</button>
-  <p id="resultado" style=""></p>
+  <p id="resultado" style="" class="text-justify mx-2"></p>
   <script>
     function mostraResultado() {
       const resultado = document.getElementById("resultado")
@@ -52,7 +59,7 @@
       if (contSim == 4) {
         resultado.innerHTML = "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular o tempo (períodos) em que permanece de barriga para baixo que potenciará o seu desenvolvimento motor e as etapas seguintes!"
       } else if (contNao == 3 || contNao == 4) {
-        resultado.innerHTML = "Aconselha-se uma avaliação com fisioterapeuta da área do desenvolvimento infantil para dicas específicas e adequadas ao seu bebé!<br><p>Veja também as nossas dicas: <br>Dica 1:Associe o decúbito ventral (deitado de barriga para baixo) às rotinas do seu bebé  (p.e. na muda da fralda, após o banho para colocar creme nas costas, sempre que muda a fralda, enquanto brinca no seu colo sobre os membros inferiores) aumentando gradualmente o tempo em que permanece nesta posição. Isto irá contribuir para o controlo de cabeça e tronco.<br>Dica 2No colo alterne entre os 2 braços e varie os posicionamentos (barriga para baixo, de lado, deitado sobre o seu peito quando está na cama ou sofá…)Aproveite a almofada de amamentação para posicionar o seu bebé em decúbito dorsal (de barriga para cima) e promover a organização das mãos na linha média. <br>Dica 3: Prepare um espaço destinado ao seu bebé no chão(p.e.parque) e comece a coloca - lo por pequenos período,tanto em decúbito ventral como decúbito dorsal ou mesmo lateral, com ajuda de almofadas e sempre com supervisão. A vivência do movimento numa superfície estável irá potenciar o controlo postural do seu bebé."
+        resultado.innerHTML = "Aconselha-se uma avaliação com fisioterapeuta da área do desenvolvimento infantil para dicas específicas e adequadas ao seu bebé!<br><p>Veja também as nossas dicas: <br>Dica 1:Associe o decúbito ventral (deitado de barriga para baixo) às rotinas do seu bebé  (p.e. na muda da fralda, após o banho para colocar creme nas costas, sempre que muda a fralda, enquanto brinca no seu colo sobre os membros inferiores) aumentando gradualmente o tempo em que permanece nesta posição. Isto irá contribuir para o controlo de cabeça e tronco.<br>Dica 2: No colo alterne entre os 2 braços e varie os posicionamentos (barriga para baixo, de lado, deitado sobre o seu peito quando está na cama ou sofá…)Aproveite a almofada de amamentação para posicionar o seu bebé em decúbito dorsal (de barriga para cima) e promover a organização das mãos na linha média. <br>Dica 3: Prepare um espaço destinado ao seu bebé no chão(p.e.parque) e comece a coloca - lo por pequenos período,tanto em decúbito ventral como decúbito dorsal ou mesmo lateral, com ajuda de almofadas e sempre com supervisão. A vivência do movimento numa superfície estável irá potenciar o controlo postural do seu bebé."
       } else {
         resultado.innerHTML = "Dica 1: Associe o decúbito ventral (deitado de barriga para baixo) às rotinas do seu bebé (p.e. na muda da fralda, após o banho para colocar creme nas costas, sempre que muda a fralda, enquanto brinca no seu colo sobre os membros inferiores) aumentando gradualmente o tempo em que permanece nesta posição. Isto irá contribuir para o controlo de cabeça e tronco.<br> Dica 2: No colo alterne entre os 2 braços e varie os posicionamentos (barriga para baixo, de lado, deitado sobre o seu peito quando está na cama ou sofá…) Aproveite a almofada de amamentação para posicionar o seu bebé em decúbito dorsal (de barriga para cima) e promover a organização das mãos na linha média. "
       }

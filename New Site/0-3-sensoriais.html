@@ -1,92 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Competências sensoriais do bebé</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Competências sensoriais do bebé</title>
+  <link rel="stylesheet" href="theme.css">
 </head>
 
-<body>
-    <h2>Competências sensoriais do bebé</h2>
-    <p>
-        Assinale a opção (sim ou não) que caracteriza o desempenho do seu bebé em cada uma das competências esperadas
-        neste
-        trimestre. Realça-se que as competências referidas são tipicamente evidenciadas no final do trimestre, pelo que
-        este
-        pode ser um guia de algumas etapas a potenciar ao longo deste.
-    </p>
-
-    <p>
-        1. Segue visualmente um brinquedo na horizontal (esquerda para a direita e vice-versa) com movimento conjunto
-        da cabeça
-        e dos olhos (sistema visual)
-        <br>
-        <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM
-        <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO
-    </p>
-
-    <p>
-        2. Direciona a cabeça para o som ou voz (sistema auditivo)
-        <br>
-        <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim"> SIM
-        <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO
-    </p>
-
-    <p>
-        3. É capaz de acalmar com movimento, toque e sons suaves (sistema vestibular, propriocetivo e tátil)
-        <br>
-        <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim"> SIM
-        <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO
-    </p>
-
-    <p>
-        4. Gosta de movimento (aceita o manuseio e as mudanças de posição)
-        (sistema vestibular e propriocetivo)
-        <br>
-        <input type="radio" id="_0_3_4" name="0_3_4" value="0_3_4_sim"> SIM
-        <input type="radio" name="0_3_4" value="0_3_4_nao"> NÃO
-    </p>
-
-    <button onClick="mostraResultado()">SUBMETER</button>
-
-    <p id="resultado"></p>
-
-    <script>
-        function mostraResultado() {
-            const resultado = document.getElementById("resultado")
-            const _0_3_1 = document.getElementById("_0_3_1")
-            const _0_3_2 = document.getElementById("_0_3_2")
-            const _0_3_3 = document.getElementById("_0_3_3")
-            const _0_3_4 = document.getElementById("_0_3_4")
-            let contSim = 0,
-                contNao = 0
-
-            _0_3_1.checked ? contSim++ : contNao++
-            _0_3_2.checked ? contSim++ : contNao++
-            _0_3_3.checked ? contSim++ : contNao++
-            _0_3_4.checked ? contSim++ : contNao++
-
-
-            // Todas SIM
-            if (contSim == 4) {
-                resultado.innerHTML =
-                    "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular todos os sentidos do seu bebé: Audição, Visão, Tato, Olfato, Paladar, Vestibular e propriocetivo."
-            } else if (contNao == 3 || contNao == 4) {
-                resultado.innerHTML =
-                    "Aconselha-se uma avaliação com Terapeuta Ocupacional da área do desenvolvimento infantil para dicas específicas e adequadas ao seu bebé! <br>Veja também as nossas dicas: <br>Dica 1 + Dica 2 + <br>Dica 3: Aproveite o momento do banho e de vestir para fazer massagem e promover o contacto pele com pele com o seu bebé. O sistema tátil está ligado à vinculação mãe-bebé e pai – bebé, bem como, ao desenvolvimento das competências manipulativas."
-            } else {
-                resultado.innerHTML =
-                    "Dica 1: A visão é o sentido que mais se desenvolve nesta fase, o bebé passa da visão periférica para a central permitindo o desenvolvimento da binocularidade. Use objetos com contraste tanto coloridos como branco e preto. Estimule a atenção visual: a sua face será o “brinquedo” preferido do bebé . Apresente também brinquedos e espere que olhe, depois movimente lentamente para que siga.<br> Dica 2: No primeiro trimestre replicar as vivências que o bebé teve in útero pode ajudar na sua regulação - Recorra à conjugação de sons brancos, balanceio (embalar) e flexão (enfaixamento e/ou envolvimento com manta) por alguns períodos. "
-            }
-
-            resultado.innerHTML +=
-                "<p><center><button onClick=location.href=\"0-3-comunicacao.html\">Saltar para as Competências de Comunicação</button></center></p>"
-        }
-    </script>
-
-
+<body class="shadow-sm bg-light">
+  <div class="bg-light filter-fade-in">
+    <div class="container">
+      <div class="row">
+        <div class="flex-column align-items-start justify-content-center col-lg">
+          <h1 class="text-center p-1 pt-3" style=""><i><b>Competências sensoriais do bebé</b></i></h1>
+          <p class="text-justify">As competências referidas são apenas um guia e refletem tipicamente competências evidenciadas no final do trimestre, pelo que podem também servir como guia de competências a potenciar ao longo deste.&nbsp;<br>No entanto, cada bebé tem um ritmo próprio!<br></p>
+          <div class="row">
+            <div class="col-md-12"> <i class="fa fa-stop-circle fa-3x mr-3 text-muted d-inline"></i> <i class="fa fa-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-stop-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-circle fa-3x ml-3 text-muted d-inline"></i> </div>
+          </div>
+        </div>
+        <div class="col-md-5"> <img class="d-block mt-2 rounded img-fluid" src="imagens/sensorial2.jpeg"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="lead">Assinale a opção que caracteriza o desempenho do seu bebé em cada uma das competências:</p>
+      </div>
+    </div>
+  </div>
+  <p> </p>
+  <p class="justify-content-center mx-2 border-light shadow text-justify bg-info pt-1"> 1. Segue visualmente um brinquedo na horizontal (esquerda para a direita e vice-versa) com movimento conjunto da cabeça e dos olhos (sistema visual) <br>
+    <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO </p>
+  <p> </p>
+  <p class="shadow mx-2 py-1"> 2. Direciona a cabeça para o som ou voz (sistema auditivo) <br>
+    <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim"> SIM <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO </p>
+  <p> </p>
+  <p class="mx-2 text-justify shadow bg-info py-1"> 3. É capaz de acalmar com movimento, toque e sons suaves (sistema vestibular, propriocetivo e tátil) <br>
+    <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim"> SIM <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO </p>
+  <p class="border-light shadow mx-2 py-1"> 4. Gosta de movimento (aceita o manuseio e as mudanças de posição) (sistema vestibular e propriocetivo) <br>
+    <input type="radio" id="_0_3_4" name="0_3_4" value="0_3_4_sim"> SIM <input type="radio" name="0_3_4" value="0_3_4_nao"> NÃO </p>
+  <button onclick="mostraResultado()" class="bg-primary">SUBMETER</button>
+  <p id="resultado" class="mx-2"></p>
+  <script style="">
+    function mostraResultado() {
+      const resultado = document.getElementById("resultado")
+      const _0_3_1 = document.getElementById("_0_3_1")
+      const _0_3_2 = document.getElementById("_0_3_2")
+      const _0_3_3 = document.getElementById("_0_3_3")
+      const _0_3_4 = document.getElementById("_0_3_4")
+      let contSim = 0,
+        contNao = 0
+      _0_3_1.checked ? contSim++ : contNao++
+      _0_3_2.checked ? contSim++ : contNao++
+      _0_3_3.checked ? contSim++ : contNao++
+      _0_3_4.checked ? contSim++ : contNao++
+      // Todas SIM
+      if (contSim == 4) {
+        resultado.innerHTML = "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular todos os sentidos do seu bebé: Audição, Visão, Tato, Olfato, Paladar, Vestibular e propriocetivo."
+      } else if (contNao == 3 || contNao == 4) {
+        resultado.innerHTML = "Aconselha-se uma avaliação com Terapeuta Ocupacional da área do desenvolvimento infantil para dicas específicas e adequadas ao seu bebé! <br>Veja também as nossas dicas: <br> Dica 1: A visão é o sentido que mais se desenvolve nesta fase, o bebé passa da visão periférica para a central  permitindo o desenvolvimento da binocularidade. Use objetos com contraste tanto coloridos como branco e preto. Estimule a atenção visual: a sua face será o “brinquedo” preferido do bebé; Apresente um brinquedo, espere que olhe e depois movimente lentamente para estimular o seguimento visual <br>Dica 2: No primeiro trimestre replicar as vivências que o bebé teve in útero pode ajudar na sua regulação - Recorra à conjugação de  sons brancos, balanceio (embalar) e flexão (enfaixamento e/ou envolvimento com manta) por alguns períodos. <br> Dica 3: Aproveite o momento do banho e de vestir para fazer massagem e promover o contacto pele com pele com o seu bebé. O sistema tátil está ligado à vinculação mãe-bebé e pai – bebé, bem como, ao desenvolvimento das competências manipulativas."
+      } else {
+        resultado.innerHTML = "Dica 1: A visão é o sentido que mais se desenvolve nesta fase, o bebé passa da visão periférica para a central permitindo o desenvolvimento da binocularidade. Use objetos com contraste tanto coloridos como branco e preto. Estimule a atenção visual: a sua face será o “brinquedo” preferido do bebé . Apresente também brinquedos e espere que olhe, depois movimente lentamente para que siga.<br> Dica 2: No primeiro trimestre replicar as vivências que o bebé teve in útero pode ajudar na sua regulação - Recorra à conjugação de sons brancos, balanceio (embalar) e flexão (enfaixamento e/ou envolvimento com manta) por alguns períodos. "
+      }
+      resultado.innerHTML += "<p><center><button onClick=location.href=\"0-3-comunicacao.html\">Saltar para as Competências de Comunicação</button></center></p>"
+    }
+  </script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>
