@@ -20,7 +20,7 @@
             <div class="col-md-12"> <i class="fa fa-stop-circle fa-3x mr-3 text-muted d-inline"></i> <i class="fa fa-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-stop-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-circle fa-3x ml-3 text-muted d-inline"></i> </div>
           </div>
         </div>
-        <div class="col-md-5"> <img class="d-block img-fluid rounded mt-5" src="imagens/child-3046494_1280.jpg"> </div>
+        <div class="col-md-5"> <img class="d-block img-fluid rounded mt-5" src="imagens/comunicação.jpeg"> </div>
       </div>
     </div>
   </div>
@@ -31,19 +31,19 @@
       </div>
     </div>
   </div>
-  <p class="justify-content-center border-light shadow text-justify bg-info pt-1 mx-3" contenteditable="true"> 1.Reconhece o próprio nome (olha quando o adulto chama)<br>
+  <p class="justify-content-center border-light shadow text-justify bg-info pt-1 mx-3"> 1. Interage com os outros e mantém o contato visual com as pessoas durante estas interações<br>(Gosta de jogos e é intencional neste tipo de tarefas ex:“cucu”). <br>
     <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO </p>
   <p>
   </p>
-  <p class="py-1 shadow mx-3"> 2. Usa maior variedade de sons e combinações silábicas nas vocalizações e Começa a usar gestos para comunicar vontades e necessidades, p.e. esticar braços para pedir colo.<br>
+  <p class="py-1 shadow mx-3"> 2. Direciona o olhar e está atento ao que o adulto lhe diz ou aponta.&nbsp;<br>Compreende e cumpre ordens simples, por exemplo: “Vem cá”.<br>
     <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim" required="required"> SIM <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO </p>
-  <p class="text-justify shadow bg-info py-1 mx-3"> 3. Dirige o olhar para objetos e pessoas familiares quando nomeados.<br>
+  <p class="text-justify shadow bg-info py-1 mx-3"> 3 Utiliza frequentemente e de forma intencional algumas palavras como “mamã”, “papá” e “não”.<br>&nbsp;Imita sons de fala e produz sons encadeados com entoação semelhante ao discurso do adulto. <br>
     <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim" required="required"> SIM <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO </p>
-  <p class="border-light shadow py-1 mx-3" style=""> 4. Mantém o contacto ocular com o adulto nos momentos de interação e imita-o em atividades de brincar simples, p.e. bater palmas. <br>
+  <p class="border-light shadow py-1 mx-3" style=""> 4. Reconhece alguns conceitos pelo uso, tais como: pente, colher, sapato.&nbsp;<br>Usa gestos/aponta para comunicar.<br>
     <input type="radio" id="_0_3_4" name="0_3_4" value="0_3_4_sim" required="required"> SIM <input type="radio" name="0_3_4" value="0_3_4_nao"> NÃO </p>
-  <p class="text-justify shadow bg-info py-1 mx-3" style=""> 5.Agarra, morde e mastiga um alimento sólido, p.e: uma bolacha ou formato finger food.<br>
+  <p class="text-justify shadow bg-info py-1 mx-3" style=""> 5. Aceita maior variedade de alimentos “finger food” com tamanho adequado para ser manipulado e levado à boca (legumes cozidos, frutas moles, biscoitos adequados à idade e massa cozida).<br>
     <input type="radio" id="_0_3_5" name="0_3_5" value="0_3_5_sim" required="required"> SIM <input type="radio" name="0_3_5" value="0_3_5_nao"> NÃO </p>
-  <p class="py-1 mx-3 shadow" style=""> 6 - Usa o lábio superior para fazer o varrimento do alimento da colher.<br>
+  <p class="py-1 mx-3 shadow" style=""> 6. É capaz de levar os alimentos à boca com as mãos, realizando o movimento de pinça (dedo indicador e polegar).<br>Está pronto para começar o treino de autonomia durante a alimentação: comer com colher.<br>
     <input type="radio" id="_0_3_6" name="0_3_6" value="0_3_6_sim" required="required"> SIM <input type="radio" name="0_3_6" value="0_3_6_nao"> NÃO </p>
   <button onclick="mostraResultado()" class="bg-primary px-1">SUBMETER</button>
   <p id="resultado" style="" class="text-justify mx-3"></p>
@@ -65,13 +65,13 @@
       _0_3_5.checked ? contSim++ : contNao++
       _0_3_6.checked ? contSim++ : contNao++
       if (contSim == 6) {
-        resultado.innerHTML = "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular a interação, as vocalizações e os turnos de interação. Introduza alimentos sólidos a partir do momento que apresente um bom controlo do tronco sentado."
+        resultado.innerHTML = "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a conversar muito com ele e dê tempo de resposta, só assim o bebé terá oportunidade de aprender."
       } else if (contNao == 5 || contNao == 6) {
-        resultado.innerHTML = "Aconselha-se uma avaliação com Terapeuta da Fala da área do desenvolvimento infantil para dicas específicas e  adequadas ao seu bebé!<br><p>Veja também as nossas dicas: <br>Dica 1: O bebé vai reconhecer o nome pelo qual usualmente é chamado. Procurem uniformizar  a forma como chamam. Nomeio os objetos e ações do dia-a-dia para que comece a criar esses conceitos.<br><br> Dica 2: Quando pegar no seu bebé ao colo espere que ele realize o movimento para dar a resposta adequada à iniciativa. Utilize gestos simples para as diferentes atividades de vida diária. Faça brincadeiras e músicas acompanhadas com gestos “a pintinha põe o ovo…”O bebé aprende imenso por imitação<br><br> Dica 3: é fundamental dar tempo ao bebé para a resposta. Sempre que conversamos ou solicitamos algo é fundamental aguardar pelo tempo de processamento de informação e respetiva resposta do bebé (seja sorriso, vocalização, gesto).<br><br> Dica 4: Para introdução da alimentação garanta que o bebé está bem posicionado na cadeira de alimentação (tronco direito e com apoio, se necessário coloque almofada ou toalha) e coloque-se de frente para o bebé. Utilize uma colher pequena proporcional ao tamanho da cavidade oral (idealmente colher de café)."
+        resultado.innerHTML = "Aconselha-se uma avaliação com Terapeuta da Fala da área do desenvolvimento infantil para dicas específicas e  adequadas ao seu bebé!<br><p>Veja também as nossas dicas: <br> Dica 1: Faça muitas brincadeiras de escondidas com o seu bebé. Coloque um lenço entre os dois e baixe-o de repente dizendo “cucu” com entusiasmo. De seguida deixe-o realizar o mesmo comportamento. Esconda brinquedos e faça o mesmo.<br><br> Dica 2: nomeie todos os objetos sempre que forem utilizados. Nomeie todos os familiares, espere que o bebé aponte ou direcione o olhar e parabenize-o quando o fizer.O bebé aprende por imitação, repetição e exposição aos diferentes estímulos. <br><br> Dica 3: durante a rotina mostre a utilização correta dos diferentes objetos antes de os utilizar e dê a oportunidade para que o bebé imite.<br><br> Dica 4: é fundamental que o bebé experiencie o alimento sólido (mas de mastigação fácil) entre os 8 e os 12 meses. Não devemos atrasar a introdução dos sólidos pois acarreta dificuldades ao nível da mobilidade e sensibilidade das estruturas orofaciais."
       } else if (contNao == 3 || contNao == 4) {
-        resultado.innerHTML = "Dica 1: O bebé vai reconhecer o nome pelo qual usualmente é chamado. Procurem uniformizar  a forma como chamam. Nomeio os objetos e ações do dia-a-dia para que comece a criar esses conceitos.<br><br> Dica 2: Quando pegar no seu bebé ao colo espere que ele realize o movimento para dar a resposta adequada à iniciativa. Utilize gestos simples para as diferentes atividades de vida diária. Faça brincadeiras e músicas acompanhadas com gestos “a pintinha põe o ovo…”O bebé aprende imenso por imitação<br><br> Dica 3: é fundamental dar tempo ao bebé para a resposta. Sempre que conversamos ou solicitamos algo é fundamental aguardar pelo tempo de processamento de informação e respetiva resposta do bebé (seja sorriso, vocalização, gesto)."
+        resultado.innerHTML = "Dica 1: Faça muitas brincadeiras de escondidas com o seu bebé. Coloque um lenço entre os dois e baixe-o de repente dizendo “cucu” com entusiasmo. De seguida deixe-o realizar o mesmo comportamento. Esconda brinquedos e faça o mesmo.<br><br> Dica 2: nomeie todos os objetos sempre que forem utilizados. Nomeie todos os familiares, espere que o bebé aponte ou direcione o olhar e parabenize-o quando o fizer.O bebé aprende por imitação, repetição e exposição aos diferentes estímulos. <br><br> Dica 3: durante a rotina mostre a utilização correta dos diferentes objetos antes de os utilizar e dê a oportunidade para que o bebé imite.<br><br>"
       } else {
-        resultado.innerHTML = "Dica 1: O bebé vai reconhecer o nome pelo qual usualmente é chamado. Procurem uniformizar  a forma como chamam. Nomeio os objetos e ações do dia-a-dia para que comece a criar esses conceitos.<br><br> Dica 2: Quando pegar no seu bebé ao colo espere que ele realize o movimento para dar a resposta adequada à iniciativa. Utilize gestos simples para as diferentes atividades de vida diária. Faça brincadeiras e músicas acompanhadas com gestos “a pintinha põe o ovo…”O bebé aprende imenso por imitação."
+        resultado.innerHTML = "Dica 1: Faça muitas brincadeiras de escondidas com o seu bebé. Coloque um lenço entre os dois e baixe-o de repente dizendo “cucu” com entusiasmo. De seguida deixe-o realizar o mesmo comportamento. Esconda brinquedos e faça o mesmo.<br><br> Dica 2: nomeie todos os objetos sempre que forem utilizados. Nomeie todos os familiares, espere que o bebé aponte ou direcione o olhar e parabenize-o quando o fizer.O bebé aprende por imitação, repetição e exposição aos diferentes estímulos."
       }
       resultado.innerHTML += "<p><center><button onClick=location.href=\"index.html\">Voltar Página Principal</button></center></p>"
     }

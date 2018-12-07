@@ -26,24 +26,24 @@
   </div>
   <div class="">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 ml-3">
         <p class="lead">Assinale a opção que caracteriza o desempenho do seu bebé em cada uma das competências:</p>
       </div>
     </div>
   </div>
   <p> </p>
-  <p class="justify-content-center mx-2 border-light shadow text-justify bg-info pt-1"> 1. Gosta de movimento linear em diferentes amplitudes, e das mudanças de posição (sistema vestibular e propriocetivo). <br>
+  <p class="justify-content-center border-light shadow text-justify bg-info pt-1 mx-3"> 1. Gosta de movimento linear em diferentes amplitudes, e das mudanças de posição (sistema vestibular e propriocetivo). <br>
     <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO </p>
   <p> </p>
-  <p class="shadow mx-2 py-1"> 2. Usa as duas mãos na linha média e a boca para explorar os brinquedos.&nbsp;<br>Faz preensão voluntária dos objetos e transfere o brinquedo de uma mão para a outra (sistema tátil e proprioceptivo). <br>
+  <p class="shadow py-1 mx-3"> 2. Usa as duas mãos na linha média e a boca para explorar os brinquedos.&nbsp;<br>Faz preensão voluntária dos objetos e transfere o brinquedo de uma mão para a outra (sistema tátil e proprioceptivo). <br>
     <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim"> SIM <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO </p>
   <p> </p>
-  <p class="mx-2 text-justify shadow bg-info py-1"> 3. É capaz de acalmar com movimento, toque e sons suaves (sistema vestibular, propriocetivo e tátil). <br>
+  <p class="text-justify shadow bg-info py-1 mx-3"> 3. É capaz de acalmar com movimento, toque e sons suaves (sistema vestibular, propriocetivo e tátil). <br>
     <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim"> SIM <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO </p>
-  <p class="border-light shadow mx-2 py-1"> 4. Reage a ruídos ou sons repentinos.<br>&nbsp;Normalmente não fica perturbado ou irritado por sons do quotidiano (sistema auditivo). <br>
+  <p class="border-light shadow py-1 mx-3"> 4. Reage a ruídos ou sons repentinos.<br>&nbsp;Normalmente não fica perturbado ou irritado por sons do quotidiano (sistema auditivo). <br>
     <input type="radio" id="_0_3_4" name="0_3_4" value="0_3_4_sim"> SIM <input type="radio" name="0_3_4" value="0_3_4_nao"> NÃO </p>
   <button onclick="mostraResultado()" class="bg-primary" style="">SUBMETER</button>
-  <p id="resultado" class="mx-2"></p>
+  <p id="resultado" class="mx-3"></p>
   <script style="">
     function mostraResultado() {
       const resultado = document.getElementById("resultado")
@@ -61,7 +61,7 @@
       if (contSim == 4) {
         resultado.innerHTML = " Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular todos os sentidos do seu bebé: Audição, Visão, Tato, Olfato, Paladar, Vestibular e Propriocetivo.<br> Disponibilize brinquedos com diferentes características que potenciem a exploração com as duas mãos e que sejam seguros para levar à boca. Livrinhos pequenos, fitas de cetim, pedaços de pano, bonecos macios, argolas, cubos, objetos espelhados, chocalhos e mordedores garantem a diversão dos bebés nesta faixa etária!"
       } else if (contNao == 3 || contNao == 4) {
-        resultado.innerHTML = "Aconselha-se uma avaliação com Terapeuta Ocupacional da área do desenvolvimento infantil para dicas específicas e adequadas ao seu bebé! <br>Veja também as nossas dicas: <br> Dica 1: O bebé tem nesta fase uma maior concentração de recetores táteis na  região perioral (boca), sendo por isso a principal forma de apreender as características dos objetos que o rodeiam. É fundamental neste trimestre deixar que o bebé leve as mãos e objetos com diferentes texturas à boca (assegurar que os brinquedos e objetos são seguros). Isto irá contribuir para preparar as mãos e a boca para a introdução de alimentos. <br><br> Dica 2:O sistema visual continua numa fase de grande desenvolvimento: faça diferentes expressões faciais e espere que o bebé o tente imitar; veja livros simples com o bebé e aponte para as imagens. Alterne os estímulos visuais presentes no móbil ou pendurados no parque para estimular a atenção visual. Evite ecrãs.<br><br> Dica 3:O bebé começa a associar a informação de dois sistemas para criar conceitos sobre o mundo que o rodeia. O brincar sensorial é caracterizado por uma sucessiva exploração visual e oral dos objetos (ou seja, o bebé olha e analisa os objetos e depois leva-os à boca), bem como pela exploração do próprio corpo (explorar e brincar com as mãos). Construir sacos sensoriais com texturas existentes em casa pode ser uma boa forma de explorar texturas diferentes com as mãos de forma segura."
+        resultado.innerHTML = "Aconselha-se uma avaliação com Terapeuta Ocupacional da área do desenvolvimento infantil para dicas específicas e adequadas ao seu bebé! <br>Veja também as nossas dicas: <br> Dica 1: O bebé tem nesta fase uma maior concentração de recetores táteis na  região perioral (boca), sendo por isso a principal forma de apreender as características dos objetos que o rodeiam. <br>É fundamental neste trimestre deixar que o bebé leve as mãos e objetos com diferentes texturas à boca (assegurar que os brinquedos e objetos são seguros). Isto irá contribuir para preparar as mãos e a boca para a introdução de alimentos. <br><br> Dica 2:O sistema visual continua numa fase de grande desenvolvimento: faça diferentes expressões faciais e espere que o bebé o tente imitar; veja livros simples com o bebé e aponte para as imagens. Alterne os estímulos visuais presentes no móbil ou pendurados no parque para estimular a atenção visual. Evite ecrãs.<br><br> Dica 3:O bebé começa a associar a informação de dois sistemas para criar conceitos sobre o mundo que o rodeia.<br> O brincar sensorial é caracterizado por uma sucessiva exploração visual e oral dos objetos (ou seja, o bebé olha e analisa os objetos e depois leva-os à boca), bem como pela exploração do próprio corpo (explorar e brincar com as mãos). Construir sacos sensoriais com texturas existentes em casa pode ser uma boa forma de explorar texturas diferentes com as mãos de forma segura."
       } else {
         resultado.innerHTML = "Dica 1: O bebé tem nesta fase uma maior concentração de recetores táteis na  região perioral (boca), sendo por isso a principal forma de apreender as características dos objetos que o rodeiam. É fundamental neste trimestre deixar que o bebé leve as mãos e objetos com diferentes texturas à boca (assegurar que os brinquedos e objetos são seguros). Isto irá contribuir para preparar as mãos e a boca para a introdução de alimentos.<br><br> Dica 2:O sistema visual continua numa fase de grande desenvolvimento: faça diferentes expressões faciais e espere que o bebé o tente imitar; veja livros simples com o bebé e aponte para as imagens. Alterne os estímulos visuais presentes no móbil ou pendurados no parque para estimular a atenção visual. Evite expor o seu bebé a ecrãs."
       }

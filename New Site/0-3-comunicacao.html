@@ -27,21 +27,21 @@
   <div class="">
     <div class="row">
       <div class="col-md-12">
-        <p class="lead mx-2">Assinale a opção que caracteriza o desempenho do seu bebé em cada uma das competências:</p>
+        <p class="lead mx-3">Assinale a opção que caracteriza o desempenho do seu bebé em cada uma das competências:</p>
       </div>
     </div>
   </div>
   <p> </p>
-  <p class="justify-content-center mx-2 border-light shadow text-justify bg-info pt-1"> 1. Mostra interesse em rostos (sorriso social) <br>
+  <p class="justify-content-center border-light shadow text-justify bg-info pt-1 mx-3"> 1. Mostra interesse em rostos (sorriso social) <br>
     <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO </p>
   <p> </p>
-  <p class="shadow mx-2 py-1">2. Acalma ou sorri em resposta ao som ou voz familiar <br>
+  <p class="shadow py-1 mx-3">2. Acalma ou sorri em resposta ao som ou voz familiar <br>
     <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim"> SIM <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO </p>
   <p> </p>
-  <p class="mx-2 text-justify shadow bg-info py-1"> 3. Chora de forma diferente para diferentes necessidades (por exemplo, com fome, cansado).<br>
+  <p class="text-justify shadow bg-info py-1 mx-3"> 3. Chora de forma diferente para diferentes necessidades (por exemplo, com fome, cansado).<br>
     <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim"> SIM <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO </p>
   <button onclick="mostraResultado()" class="bg-primary">SUBMETER</button>
-  <p class="mx-2" id="resultado"></p>
+  <p class="mx-3" id="resultado"></p>
   <script>
     function mostraResultado() {
       const resultado = document.getElementById("resultado")
@@ -57,9 +57,9 @@
       if (contSim == 3) {
         resultado.innerHTML = "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular a interação e o contacto ocular de forma a potenciar as etapas seguintes do desenvolvimento."
       } else if (contNao == 3) {
-        resultado.innerHTML = "Aconselha-se uma avaliação com Terapeuta da Fala da área do desenvolvimento infantil para dicas específicas e adequadas ao seu bebé! <br>Veja também as nossas dicas: <br> Dica 1: Sempre que o bebé estiver no colo, observe-o e procure que ele faça o mesmo consigo. Realize sons variados de forma a chamar à atenção para si.<br> Dica 2: Procure dar resposta a cada comportamento do seu bebé (som , sorriso, olhar). O ser humano nesta fase inicial do desenvolvimento aprende através da resposta a um comportamento (causa-efeito), assim se reforçarmos cada tomada de iniciativa, é esperado que estas aumentem em quantidade e qualidade."
+        resultado.innerHTML = "Aconselha-se uma avaliação com Terapeuta da Fala da área do desenvolvimento infantil para dicas específicas e adequadas ao seu bebé! <br>Veja também as nossas dicas: <br> Dica 1: Sempre que o bebé estiver no colo, observe-o e procure que ele faça o mesmo consigo.<br> Realize sons variados de forma a chamar à atenção para si.<br> <br>Dica 2: Procure dar resposta a cada comportamento do seu bebé (som , sorriso, olhar). O ser humano nesta fase inicial do desenvolvimento aprende através da resposta a um comportamento (causa-efeito), assim se reforçarmos cada tomada de iniciativa, é esperado que estas aumentem em quantidade e qualidade."
       } else {
-        resultado.innerHTML = "Dica 1: Sempre que o bebé estiver no colo, observe-o e procure que ele faça o mesmo consigo. Realize sons variados de forma a chamar à atenção para si.<br>Dica 2: Procure dar resposta a cada comportamento do seu bebé (som , sorriso, olhar). O ser humano nesta fase inicial do desenvolvimento aprende através da resposta a um comportamento (causa-efeito), assim se reforçarmos cada tomada de iniciativa, é esperado que estas aumentem em quantidade e qualidade."
+        resultado.innerHTML = "Dica 1: Sempre que o bebé estiver no colo, observe-o e procure que ele faça o mesmo consigo. Realize sons variados de forma a chamar à atenção para si.<br><br>Dica 2: Procure dar resposta a cada comportamento do seu bebé (som , sorriso, olhar). O ser humano nesta fase inicial do desenvolvimento aprende através da resposta a um comportamento (causa-efeito), assim se reforçarmos cada tomada de iniciativa, é esperado que estas aumentem em quantidade e qualidade."
       }
       //definir botão para voltar pagina incial
       resultado.innerHTML += "<p><center><button onClick=location.href=\"index.html\">Voltar Página Inicial</button></center></p>"

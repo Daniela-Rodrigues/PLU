@@ -27,20 +27,20 @@
   <div class="">
     <div class="row">
       <div class="col-md-12">
-        <p class="lead">Assinale a opção que caracteriza o desempenho do seu bebé em cada uma das competências:</p>
+        <p class="lead ml-3">Assinale a opção que caracteriza o desempenho do seu bebé em cada uma das competências:</p>
       </div>
     </div>
   </div>
   <p> </p>
-  <p class="justify-content-center mx-2 border-light shadow text-justify bg-info pt-1"> 1. Segue visualmente um brinquedo na horizontal (esquerda para a direita e vice-versa) com movimento conjunto da cabeça e dos olhos (sistema visual) <br>
+  <p class="justify-content-center border-light shadow text-justify bg-info pt-1 mx-3"> 1. Segue visualmente um brinquedo na horizontal (esquerda para a direita e vice-versa) com movimento conjunto da cabeça e dos olhos (sistema visual) <br>
     <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO </p>
   <p> </p>
-  <p class="shadow mx-2 py-1"> 2. Direciona a cabeça para o som ou voz (sistema auditivo) <br>
+  <p class="shadow py-1 mx-3"> 2. Direciona a cabeça para o som ou voz (sistema auditivo) <br>
     <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim"> SIM <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO </p>
   <p> </p>
-  <p class="mx-2 text-justify shadow bg-info py-1"> 3. É capaz de acalmar com movimento, toque e sons suaves (sistema vestibular, propriocetivo e tátil) <br>
+  <p class="text-justify shadow bg-info py-1 mx-3"> 3. É capaz de acalmar com movimento, toque e sons suaves (sistema vestibular, propriocetivo e tátil) <br>
     <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim"> SIM <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO </p>
-  <p class="border-light shadow mx-2 py-1"> 4. Gosta de movimento (aceita o manuseio e as mudanças de posição) (sistema vestibular e propriocetivo) <br>
+  <p class="border-light shadow py-1 mx-3"> 4. Gosta de movimento (aceita o manuseio e as mudanças de posição) (sistema vestibular e propriocetivo) <br>
     <input type="radio" id="_0_3_4" name="0_3_4" value="0_3_4_sim"> SIM <input type="radio" name="0_3_4" value="0_3_4_nao"> NÃO </p>
   <button onclick="mostraResultado()" class="bg-primary">SUBMETER</button>
   <p id="resultado" class="mx-2"></p>
@@ -61,9 +61,9 @@
       if (contSim == 4) {
         resultado.innerHTML = "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular todos os sentidos do seu bebé: Audição, Visão, Tato, Olfato, Paladar, Vestibular e propriocetivo."
       } else if (contNao == 3 || contNao == 4) {
-        resultado.innerHTML = "Aconselha-se uma avaliação com Terapeuta Ocupacional da área do desenvolvimento infantil para dicas específicas e adequadas ao seu bebé! <br>Veja também as nossas dicas: <br> Dica 1: A visão é o sentido que mais se desenvolve nesta fase, o bebé passa da visão periférica para a central  permitindo o desenvolvimento da binocularidade. Use objetos com contraste tanto coloridos como branco e preto. Estimule a atenção visual: a sua face será o “brinquedo” preferido do bebé; Apresente um brinquedo, espere que olhe e depois movimente lentamente para estimular o seguimento visual <br>Dica 2: No primeiro trimestre replicar as vivências que o bebé teve in útero pode ajudar na sua regulação - Recorra à conjugação de  sons brancos, balanceio (embalar) e flexão (enfaixamento e/ou envolvimento com manta) por alguns períodos. <br> Dica 3: Aproveite o momento do banho e de vestir para fazer massagem e promover o contacto pele com pele com o seu bebé. O sistema tátil está ligado à vinculação mãe-bebé e pai – bebé, bem como, ao desenvolvimento das competências manipulativas."
+        resultado.innerHTML = "Aconselha-se uma avaliação com Terapeuta Ocupacional da área do desenvolvimento infantil para dicas específicas e adequadas ao seu bebé! <br>Veja também as nossas dicas: <br> Dica 1: A visão é o sentido que mais se desenvolve nesta fase, o bebé passa da visão periférica para a central  permitindo o desenvolvimento da binocularidade. Use objetos com contraste tanto coloridos como branco e preto.<br> Estimule a atenção visual: a sua face será o “brinquedo” preferido do bebé; Apresente um brinquedo, espere que olhe e depois movimente lentamente para estimular o seguimento visual  <br><br>Dica 2: No primeiro trimestre replicar as vivências que o bebé teve in útero pode ajudar na sua regulação - Recorra à conjugação de  sons brancos, balanceio (embalar) e flexão (enfaixamento e/ou envolvimento com manta) por alguns períodos.  <br><br> Dica 3: Aproveite o momento do banho e de vestir para fazer massagem e promover o contacto pele com pele com o seu bebé. O sistema tátil está ligado à vinculação mãe-bebé e pai – bebé, bem como, ao desenvolvimento das competências manipulativas."
       } else {
-        resultado.innerHTML = "Dica 1: A visão é o sentido que mais se desenvolve nesta fase, o bebé passa da visão periférica para a central permitindo o desenvolvimento da binocularidade. Use objetos com contraste tanto coloridos como branco e preto. Estimule a atenção visual: a sua face será o “brinquedo” preferido do bebé . Apresente também brinquedos e espere que olhe, depois movimente lentamente para que siga.<br> Dica 2: No primeiro trimestre replicar as vivências que o bebé teve in útero pode ajudar na sua regulação - Recorra à conjugação de sons brancos, balanceio (embalar) e flexão (enfaixamento e/ou envolvimento com manta) por alguns períodos. "
+        resultado.innerHTML = "Dica 1: A visão é o sentido que mais se desenvolve nesta fase, o bebé passa da visão periférica para a central permitindo o desenvolvimento da binocularidade. Use objetos com contraste tanto coloridos como branco e preto. Estimule a atenção visual: a sua face será o “brinquedo” preferido do bebé . <br> Apresente também brinquedos e espere que olhe, depois movimente lentamente para que siga. <br><br> Dica 2: No primeiro trimestre replicar as vivências que o bebé teve in útero pode ajudar na sua regulação - Recorra à conjugação de sons brancos, balanceio (embalar) e flexão (enfaixamento e/ou envolvimento com manta) por alguns períodos. "
       }
       resultado.innerHTML += "<p><center><button onClick=location.href=\"0-3-comunicacao.html\">Saltar para as Competências de Comunicação</button></center></p>"
     }
