@@ -5,16 +5,21 @@ function myMap() {
     const mapProp = {
         center: myLocation,
         zoom: 17,
-        mapTypeId: google.maps.MapTypeId.HYBRID
+        mapTypeId: google.maps.MapTypeId.HIBRID
     }
     const map = new google.maps.Map(
         document.getElementById("googleMap"), 
         mapProp)
+//definir infowindow
 
+const contentString = '<div id="content"><div id="siteNotice"></div>'+
+'<h3 id="firstHeading" class="firstHeading">BRAGA</h1>'+
+'<div id="bodyContent"><p> <b>Equipa de Desenvolvimento Infantil</b> </p>' +
+'<div class="col-md-12">Contacte-nos!'+
+'</div>'+
+'</div></div>';
 
-        const contentString = '<div id="content"><div id="siteNotice"></div>'+ '<h5 >Equipa Desenvolvimento Infantil em Braga!<br> Contacte-nos</h5>'
-
-        const infowindow = new google.maps.InfoWindow({ content: contentString, maxWidth: 330,});
+        const infowindow = new google.maps.InfoWindow({ content: contentString, maxWidth: 480,});
         const marker = new google.maps.Marker({
             position:myLocation,
             map:map,
