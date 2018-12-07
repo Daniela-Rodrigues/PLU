@@ -11,7 +11,6 @@ function myMap() {
         document.getElementById("googleMap"), 
         mapProp)
 //definir infowindow
-
 const contentString = '<div id="content"><div id="siteNotice"></div>'+
 '<h3 id="firstHeading" class="firstHeading">BRAGA</h1>'+
 '<div id="bodyContent"><p> <b>Equipa de Desenvolvimento Infantil</b> </p>' +
