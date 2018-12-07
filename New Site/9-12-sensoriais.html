@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Competências motoras do bebé</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+
+<body class="shadow-sm bg-light">
+  <div class="bg-light filter-fade-in">
+    <div class="container">
+      <div class="row">
+        <div class="flex-column align-items-start justify-content-center col-lg">
+          <h1 class="text-center p-1 pt-3" style=""><i><b>Competências Sensoriais do bebé</b></i></h1>
+          <p class="text-justify">As competências referidas são apenas um guia e refletem tipicamente competências evidenciadas no final do trimestre, pelo que podem também servir como guia de competências a potenciar ao longo deste.&nbsp;<br><br></p>
+          <div class="row">
+            <div class="col-md-12"> <i class="fa fa-stop-circle fa-3x mr-3 text-muted d-inline"></i> <i class="fa fa-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-stop-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-circle fa-3x ml-3 text-muted d-inline"></i> </div>
+          </div>
+        </div>
+        <div class="col-md-5"> <img class="d-block img-fluid rounded mt-5" src="imagens/sensorial3.jpeg"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="row">
+      <div class="col-md-12 mr-2">
+        <p class="lead pl-3">Assinale a opção que caracteriza o desempenho do seu bebé em cada uma das competências:</p>
+      </div>
+    </div>
+  </div>
+  <p class="justify-content-center border-light shadow text-justify bg-info pt-1 mx-3"> 1. . Gosta da variedade de movimentos no chão e ao colo: saltar para cima e para baixo, balançar (sistema vestibular e proprioceptivo).<br>
+    <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO </p>
+  <p>
+  </p>
+  <p class="py-1 shadow mx-3"> 2. Dissocia o movimento dos olhos dos movimentos da cabeça (o estrabismo já não é normal).&nbsp;<br>Acompanha, visualmente, objetos e pessoas posicionados em diferentes pontos (sistema visual).<br>
+    <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim" required="required"> SIM <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO </p>
+  <p class="text-justify shadow bg-info py-1 mx-3"> 3.Explora os objetos com as duas mãos e diminuiu gradualmente a exploração com a boca (sistema tatil e proprioceptivo).<br>
+    <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim" required="required"> SIM <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO </p>
+  <p class="border-light shadow py-1 mx-3" style=""> 4. Gosta das sensações associadas às diferentes rotinas: banho, alimentação, vestir… (multissensorial) <br>
+    <input type="radio" id="_0_3_4" name="0_3_4" value="0_3_4_sim" required="required"> SIM <input type="radio" name="0_3_4" value="0_3_4_nao"> NÃO </p>
+  <p class="text-justify shadow bg-info py-1 mx-3" style=""> 5. Alcança objetos cruzando a linha média: Coordenação olho-mão.&nbsp;<br>(p.e. apanha um brinquedo com a mão direita que se encontra do seu lado esquerdo) (multissensorial)<br>
+    <input type="radio" id="_0_3_5" name="0_3_5" value="0_3_5_sim" required="required"> SIM <input type="radio" name="0_3_5" value="0_3_5_nao"> NÃO </p>
+  <p class="border-light shadow py-1 mx-3" style=""> 6. Começa a ter noção que os objetos permanecem mesmo que sejam tapados.<br>&nbsp;Noção de causa-efeito estabelecida nas brincadeiras e nas rotinas do dia-a-dia. (p.e. quando carrego dá musica)<br>
+    <input type="radio" id="_0_3_6" name="0_3_6" value="0_3_6_sim" required="required"> SIM <input type="radio" name="0_3_6" value="0_3_6_nao"> NÃO </p>
+  <button onclick="mostraResultado()" class="bg-primary px-1">SUBMETER</button>
+  <p id="resultado" style="" class="text-justify mx-3"></p>
+  <script>
+    function mostraResultado() {
+      const resultado = document.getElementById("resultado")
+      const _0_3_1 = document.getElementById("_0_3_1")
+      const _0_3_2 = document.getElementById("_0_3_2")
+      const _0_3_3 = document.getElementById("_0_3_3")
+      const _0_3_4 = document.getElementById("_0_3_4")
+      const _0_3_5 = document.getElementById("_0_3_5")
+      const _0_3_6 = document.getElementById("_0_3_6")
+      let contSim = 0,
+        contNao = 0
+      _0_3_1.checked ? contSim++ : contNao++
+      _0_3_2.checked ? contSim++ : contNao++
+      _0_3_3.checked ? contSim++ : contNao++
+      _0_3_4.checked ? contSim++ : contNao++
+      _0_3_5.checked ? contSim++ : contNao++
+      _0_3_6.checked ? contSim++ : contNao++
+      if (contSim == 6) {
+        resultado.innerHTML = "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular todos os sentidos do seu bebé: Audição, Visão, Tato, Olfato, Paladar, Vestibular e propriocetivo. Faça muitas brincadeiras sensoriais, causa-efeito e que potenciem a exploração do corpo no espaço."
+      } else if (contNao == 5 || contNao == 6) {
+        resultado.innerHTML = "Aconselha-se uma avaliação com terapeuta ocupacional da área do desenvolvimento infantil para dicas específicas e  adequadas ao seu bebé!<br><p>Veja também as nossas dicas: <br> Dica 1: Associe a alimentação e outras rotinas a  sensações positivasExponha gradualmente o bebé a novos cheiros texturas e cores para estar familiarizado com os mesmos. Coma ao mesmo tempo que o bebé e mostre reações de agrado. Coloque sempre a comida no seu campo de visão para que o bebé consiga antecipar o que irá acontecer. <br><br> Dica 2:Incentive o bebé a olhar para objetos que estão perto e longe. Na exploração de brinquedos que rolam por exemplo, deixe que o bebé acompanhe o movimento com os olhos. Deixe que tenha iniciativa para tentar ir buscar (resolução de problemas simples). <br><br> Dica 3:Brinque com o seu bebé: disponibilize brinquedos ou objetos do quotidiano que permitam explorar a noção de causa efeito (bater um no outro, juntar, rodar, por dentro e tirar de recipientes grandes). Demonstre uma brincadeira simples e aguarde que tente imitar a sua ação.Importante introduzir brinquedos com várias peças que permitam que cada mão segure numa delas.<br><br>Dica 4: Alterne entre atividades estáticas e dinâmicas: utilize as caixas ou cestos que tem em casa para balancear o bebé, deslizar pelo chão em cima de uma manta, fazer “cavalinho”, experimente os baloiços. A sensação de movimento no espaço é muito importante para o desenvolvimento do bebé."
+      } else if (contNao == 3 || contNao == 4) {
+        resultado.innerHTML = "Dica 1: Associe a alimentação e outras rotinas a  sensações positivasExponha gradualmente o bebé a novos cheiros texturas e cores para estar familiarizado com os mesmos. Coma ao mesmo tempo que o bebé e mostre reações de agrado. Coloque sempre a comida no seu campo de visão para que o bebé consiga antecipar o que irá acontecer. <br><br> Dica 2:Incentive o bebé a olhar para objetos que estão perto e longe. Na exploração de brinquedos que rolam por exemplo, deixe que o bebé acompanhe o movimento com os olhos. Deixe que tenha iniciativa para tentar ir buscar (resolução de problemas simples). <br><br> Dica 3:Brinque com o seu bebé: disponibilize brinquedos ou objetos do quotidiano que permitam explorar a noção de causa efeito (bater um no outro, juntar, rodar, por dentro e tirar de recipientes grandes). Demonstre uma brincadeira simples e aguarde que tente imitar a sua ação.Importante introduzir brinquedos com várias peças que permitam que cada mão segure numa delas."
+      } else {
+        resultado.innerHTML = "Dica 1: Associe a alimentação e outras rotinas a  sensações positivasExponha gradualmente o bebé a novos cheiros texturas e cores para estar familiarizado com os mesmos. Coma ao mesmo tempo que o bebé e mostre reações de agrado. Coloque sempre a comida no seu campo de visão para que o bebé consiga antecipar o que irá acontecer. <br><br> Dica 2:Incentive o bebé a olhar para objetos que estão perto e longe. Na exploração de brinquedos que rolam por exemplo, deixe que o bebé acompanhe o movimento com os olhos. Deixe que tenha iniciativa para tentar ir buscar (resolução de problemas simples)."
+      }
+      resultado.innerHTML += "<p><center><button onClick=location.href=\"6-9-comunicação.html\">Saltar para as Competências de Comunicação</button></center></p>"
+    }
+  </script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Competências motoras do bebé</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+
+<body class="shadow-sm bg-light">
+  <div class="bg-light filter-fade-in">
+    <div class="container">
+      <div class="row">
+        <div class="flex-column align-items-start justify-content-center col-lg">
+          <h1 class="text-center p-1 pt-3" style=""><i><b>Competências de Comunicação do bebé</b></i></h1>
+          <p class="text-justify">As competências referidas são apenas um guia e refletem tipicamente competências evidenciadas no final do trimestre, pelo que podem também servir como guia de competências a potenciar ao longo deste.&nbsp;<br><br></p>
+          <div class="row">
+            <div class="col-md-12"> <i class="fa fa-stop-circle fa-3x mr-3 text-muted d-inline"></i> <i class="fa fa-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-stop-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-circle fa-3x ml-3 text-muted d-inline"></i> </div>
+          </div>
+        </div>
+        <div class="col-md-5"> <img class="d-block img-fluid rounded mt-5" src="imagens/child-3046494_1280.jpg"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="row">
+      <div class="col-md-12 mr-2">
+        <p class="lead pl-3">Assinale a opção que caracteriza o desempenho do seu bebé em cada uma das competências:</p>
+      </div>
+    </div>
+  </div>
+  <p class="justify-content-center border-light shadow text-justify bg-info pt-1 mx-3" contenteditable="true"> 1.Reconhece o próprio nome (olha quando o adulto chama)<br>
+    <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO </p>
+  <p>
+  </p>
+  <p class="py-1 shadow mx-3"> 2. Usa maior variedade de sons e combinações silábicas nas vocalizações e Começa a usar gestos para comunicar vontades e necessidades, p.e. esticar braços para pedir colo.<br>
+    <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim" required="required"> SIM <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO </p>
+  <p class="text-justify shadow bg-info py-1 mx-3"> 3. Dirige o olhar para objetos e pessoas familiares quando nomeados.<br>
+    <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim" required="required"> SIM <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO </p>
+  <p class="border-light shadow py-1 mx-3" style=""> 4. Mantém o contacto ocular com o adulto nos momentos de interação e imita-o em atividades de brincar simples, p.e. bater palmas. <br>
+    <input type="radio" id="_0_3_4" name="0_3_4" value="0_3_4_sim" required="required"> SIM <input type="radio" name="0_3_4" value="0_3_4_nao"> NÃO </p>
+  <p class="text-justify shadow bg-info py-1 mx-3" style=""> 5.Agarra, morde e mastiga um alimento sólido, p.e: uma bolacha ou formato finger food.<br>
+    <input type="radio" id="_0_3_5" name="0_3_5" value="0_3_5_sim" required="required"> SIM <input type="radio" name="0_3_5" value="0_3_5_nao"> NÃO </p>
+  <p class="py-1 mx-3 shadow" style=""> 6 - Usa o lábio superior para fazer o varrimento do alimento da colher.<br>
+    <input type="radio" id="_0_3_6" name="0_3_6" value="0_3_6_sim" required="required"> SIM <input type="radio" name="0_3_6" value="0_3_6_nao"> NÃO </p>
+  <button onclick="mostraResultado()" class="bg-primary px-1">SUBMETER</button>
+  <p id="resultado" style="" class="text-justify mx-3"></p>
+  <script>
+    function mostraResultado() {
+      const resultado = document.getElementById("resultado")
+      const _0_3_1 = document.getElementById("_0_3_1")
+      const _0_3_2 = document.getElementById("_0_3_2")
+      const _0_3_3 = document.getElementById("_0_3_3")
+      const _0_3_4 = document.getElementById("_0_3_4")
+      const _0_3_5 = document.getElementById("_0_3_5")
+      const _0_3_6 = document.getElementById("_0_3_6")
+      let contSim = 0,
+        contNao = 0
+      _0_3_1.checked ? contSim++ : contNao++
+      _0_3_2.checked ? contSim++ : contNao++
+      _0_3_3.checked ? contSim++ : contNao++
+      _0_3_4.checked ? contSim++ : contNao++
+      _0_3_5.checked ? contSim++ : contNao++
+      _0_3_6.checked ? contSim++ : contNao++
+      if (contSim == 6) {
+        resultado.innerHTML = "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular a interação, as vocalizações e os turnos de interação. Introduza alimentos sólidos a partir do momento que apresente um bom controlo do tronco sentado."
+      } else if (contNao == 5 || contNao == 6) {
+        resultado.innerHTML = "Aconselha-se uma avaliação com Terapeuta da Fala da área do desenvolvimento infantil para dicas específicas e  adequadas ao seu bebé!<br><p>Veja também as nossas dicas: <br>Dica 1: O bebé vai reconhecer o nome pelo qual usualmente é chamado. Procurem uniformizar  a forma como chamam. Nomeio os objetos e ações do dia-a-dia para que comece a criar esses conceitos.<br><br> Dica 2: Quando pegar no seu bebé ao colo espere que ele realize o movimento para dar a resposta adequada à iniciativa. Utilize gestos simples para as diferentes atividades de vida diária. Faça brincadeiras e músicas acompanhadas com gestos “a pintinha põe o ovo…”O bebé aprende imenso por imitação<br><br> Dica 3: é fundamental dar tempo ao bebé para a resposta. Sempre que conversamos ou solicitamos algo é fundamental aguardar pelo tempo de processamento de informação e respetiva resposta do bebé (seja sorriso, vocalização, gesto).<br><br> Dica 4: Para introdução da alimentação garanta que o bebé está bem posicionado na cadeira de alimentação (tronco direito e com apoio, se necessário coloque almofada ou toalha) e coloque-se de frente para o bebé. Utilize uma colher pequena proporcional ao tamanho da cavidade oral (idealmente colher de café)."
+      } else if (contNao == 3 || contNao == 4) {
+        resultado.innerHTML = "Dica 1: O bebé vai reconhecer o nome pelo qual usualmente é chamado. Procurem uniformizar  a forma como chamam. Nomeio os objetos e ações do dia-a-dia para que comece a criar esses conceitos.<br><br> Dica 2: Quando pegar no seu bebé ao colo espere que ele realize o movimento para dar a resposta adequada à iniciativa. Utilize gestos simples para as diferentes atividades de vida diária. Faça brincadeiras e músicas acompanhadas com gestos “a pintinha põe o ovo…”O bebé aprende imenso por imitação<br><br> Dica 3: é fundamental dar tempo ao bebé para a resposta. Sempre que conversamos ou solicitamos algo é fundamental aguardar pelo tempo de processamento de informação e respetiva resposta do bebé (seja sorriso, vocalização, gesto)."
+      } else {
+        resultado.innerHTML = "Dica 1: O bebé vai reconhecer o nome pelo qual usualmente é chamado. Procurem uniformizar  a forma como chamam. Nomeio os objetos e ações do dia-a-dia para que comece a criar esses conceitos.<br><br> Dica 2: Quando pegar no seu bebé ao colo espere que ele realize o movimento para dar a resposta adequada à iniciativa. Utilize gestos simples para as diferentes atividades de vida diária. Faça brincadeiras e músicas acompanhadas com gestos “a pintinha põe o ovo…”O bebé aprende imenso por imitação."
+      }
+      resultado.innerHTML += "<p><center><button onClick=location.href=\"index.html\">Voltar Página Principal</button></center></p>"
+    }
+  </script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+</body>
+
+</html>

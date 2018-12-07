@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Competências motoras do bebé</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+
+<body class="shadow-sm bg-light">
+  <div class="bg-light filter-fade-in">
+    <div class="container">
+      <div class="row">
+        <div class="flex-column align-items-start justify-content-center col-lg">
+          <h1 class="text-center p-1 pt-3" style="" contenteditable="true"><i><b>Competências motoras do bebé</b></i></h1>
+          <p class="text-justify">As competências referidas são apenas um guia e refletem tipicamente competências evidenciadas no final do trimestre, pelo que podem também servir como guia de competências a potenciar ao longo deste.&nbsp;<br><br></p>
+          <div class="row">
+            <div class="col-md-12"> <i class="fa fa-stop-circle fa-3x mr-3 text-muted d-inline"></i> <i class="fa fa-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-stop-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-circle fa-3x ml-3 text-muted d-inline"></i> </div>
+          </div>
+        </div>
+        <div class="col-md-5"> <img class="d-block img-fluid rounded mt-5" src="imagens/alexander-dummer-261098-unsplash.jpg"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="row">
+      <div class="col-md-12 mr-2">
+        <p class="lead pl-3">Assinale a opção que caracteriza o desempenho do seu bebé em cada uma das competências:</p>
+      </div>
+    </div>
+  </div>
+  <p class="justify-content-center border-light shadow text-justify bg-info pt-1 mx-3" contenteditable="true"> 1. Mantém-se sentado num banco ajustado à sua altura e é capaz de passar para a posição de pé. <br>
+    <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO </p>
+  <p>
+  </p>
+  <p class="py-1 shadow mx-3"> 2. Gatinha, rasteja ou rabeja com maior coordenação e velocidade para alcançar objetos ou pessoas do seu interesse.<br>
+    <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim" required="required"> SIM <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO </p>
+  <p class="text-justify shadow bg-info py-1 mx-3"> 3. Com apoio dos membros superiores começa a passar da posição de sentado ou gatas para a posição de pé e baixa-se para apanhar objetos do chão.&nbsp;<br>
+    <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim" required="required"> SIM <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO </p>
+  <p class="border-light shadow py-1 mx-3" style=""> 4. Através da marcha lateral e com apoio dos membros superiores desloca-se e recorre a outras sequências de movimento como o gatinhar ou rastejar sempre que quer passar de um sítio para o outro e não tem apoio dos membros superiores. <br>
+    <input type="radio" id="_0_3_4" name="0_3_4" value="0_3_4_sim" required="required"> SIM <input type="radio" name="0_3_4" value="0_3_4_nao"> NÃO </p>
+  <p class="text-justify shadow bg-info py-1 mx-3" style=""> 5. Realiza a pinça com o polegar e indicador para manipular objetos. Utiliza ambas as mãos para brincar e explorar objetos. <br>
+    <input type="radio" id="_0_3_5" name="0_3_5" value="0_3_5_sim" required="required"> SIM <input type="radio" name="0_3_5" value="0_3_5_nao"> NÃO </p>
+  <p class="py-1 mx-3 shadow" style=""> 6. Atira objetos intencionalmente (inicia o largar voluntário com extensão dos dedos)<br>
+    <input type="radio" id="_0_3_6" name="0_3_6" value="0_3_6_sim" required="required"> SIM <input type="radio" name="0_3_6" value="0_3_6_nao"> NÃO </p>
+  <button onclick="mostraResultado()" class="bg-primary px-1">SUBMETER</button>
+  <p id="resultado" style="" class="text-justify mx-3"></p>
+  <script>
+    function mostraResultado() {
+      const resultado = document.getElementById("resultado")
+      const _0_3_1 = document.getElementById("_0_3_1")
+      const _0_3_2 = document.getElementById("_0_3_2")
+      const _0_3_3 = document.getElementById("_0_3_3")
+      const _0_3_4 = document.getElementById("_0_3_4")
+      const _0_3_5 = document.getElementById("_0_3_5")
+      const _0_3_6 = document.getElementById("_0_3_6")
+      let contSim = 0,
+        contNao = 0
+      _0_3_1.checked ? contSim++ : contNao++
+      _0_3_2.checked ? contSim++ : contNao++
+      _0_3_3.checked ? contSim++ : contNao++
+      _0_3_4.checked ? contSim++ : contNao++
+      _0_3_5.checked ? contSim++ : contNao++
+      _0_3_6.checked ? contSim++ : contNao++
+      if (contSim == 6) {
+        resultado.innerHTML = "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular a mobilidade e sequências de movimento no chão. Faça atividades na posição de pé, quando o bebé se sentir preparado irá iniciar a marcha (é típico surgir até aos 18M)"
+      } else if (contNao == 5 || contNao == 6) {
+        resultado.innerHTML = "Aconselha-se uma avaliação com fisioterapeuta da área do desenvolvimento infantil para dicas específicas e  adequadas ao seu bebé!<br><p>Veja também as nossas dicas: <br> Dica 1: Antes da marcha autónoma incentivar a marcha lateral à volta dos móveis que ajuda na estabilidade da pélvis e organização de todo o corpo para se deslocar em pé (visão, percepção…).<br><br> Dica 2: Brincar na posição de pé com apoio anterior dos membros superiores ou apoio posterior de uma parede, por exemplo. Incentivar o seu bebé a apanhar objetos do chão ou de cima do sofá podendo ter o seu apoio para facilitar os movimentos das pernas. <br><br> Dica 3: CQuando o bebé brinca no chão, incentive que mude de posição e se levante com o seu apoio ou do mobiliário em vez de pegar logo nele ao colo. Isto irá potenciar tantos as competências motoras como cognitivas (resolução de problemas). <br><br>Dica 4: Dica 4: Como alternativas para a mobilidade opte  por carrinhos em que pode sentar e empurrar-se com os pés ou andarilhos de empurrar."
+      } else if (contNao == 3 || contNao == 4) {
+        resultado.innerHTML = "Dica 1: Antes da marcha autónoma incentivar a marcha lateral à volta dos móveis que ajuda na estabilidade da pélvis e organização de todo o corpo para se deslocar em pé (visão, percepção…).<br><br> Dica 2: Brincar na posição de pé com apoio anterior dos membros superiores ou apoio posterior de uma parede, por exemplo. Incentivar o seu bebé a apanhar objetos do chão ou de cima do sofá podendo ter o seu apoio para facilitar os movimentos das pernas. <br><br> Dica 3: CQuando o bebé brinca no chão, incentive que mude de posição e se levante com o seu apoio ou do mobiliário em vez de pegar logo nele ao colo. Isto irá potenciar tantos as competências motoras como cognitivas (resolução de problemas)."
+      } else {
+        resultado.innerHTML = "Dica 1: Antes da marcha autónoma incentivar a marcha lateral à volta dos móveis que ajuda na estabilidade da pélvis e organização de todo o corpo para se deslocar em pé (visão, percepção…).<br><br> Dica 2: Brincar na posição de pé com apoio anterior dos membros superiores ou apoio posterior de uma parede, por exemplo. Incentivar o seu bebé a apanhar objetos do chão ou de cima do sofá podendo ter o seu apoio para facilitar os movimentos das pernas. "
+      }
+      resultado.innerHTML += "<p><center><button onClick=location.href=\"9-12-sensoriais.html\">Saltar para as Competências Sensoriais</button></center></p>"
+    }
+  </script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+</body>
+
+</html>

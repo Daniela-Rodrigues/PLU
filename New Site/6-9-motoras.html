@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Competências motoras do bebé</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+
+<body class="shadow-sm bg-light">
+  <div class="bg-light filter-fade-in">
+    <div class="container">
+      <div class="row">
+        <div class="flex-column align-items-start justify-content-center col-lg">
+          <h1 class="text-center p-1 pt-3" style="" contenteditable="true"><i><b>Competências motoras do bebé</b></i></h1>
+          <p class="text-justify">As competências referidas são apenas um guia e refletem tipicamente competências evidenciadas no final do trimestre, pelo que podem também servir como guia de competências a potenciar ao longo deste.&nbsp;<br><br></p>
+          <div class="row">
+            <div class="col-md-12"> <i class="fa fa-stop-circle fa-3x mr-3 text-muted d-inline"></i> <i class="fa fa-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-stop-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-circle fa-3x ml-3 text-muted d-inline"></i> </div>
+          </div>
+        </div>
+        <div class="col-md-5"> <img class="d-block img-fluid rounded mt-5" src="imagens/picsea-424444-unsplash.jpg"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="row">
+      <div class="col-md-12 mr-2">
+        <p class="lead pl-3">Assinale a opção que caracteriza o desempenho do seu bebé em cada uma das competências:</p>
+      </div>
+    </div>
+  </div>
+  <p class="justify-content-center border-light shadow text-justify bg-info pt-1 mx-3" contenteditable="true"> 1. Senta-se sem apoio (maior controlo de tronco) quando está a explorar um objeto e com maior variabilidade na forma como se senta : tanto se senta-se de lado, como com apoio de uma mão; ou com rotação do tronco (cruza a linha média).&nbsp;<br>
+    <input type="radio" id="_0_3_1" name="0_3_1" value="0_3_1_sim"> SIM <input type="radio" name="0_3_1" value="0_3_1_nao"> NÃO </p>
+  <p>
+  </p>
+  <p class="py-1 shadow mx-3"> 2. Em decúbito ventral (deitado de barriga para baixo) fica apoiado nas mãos com extensão de cotovelo e agarra objetos.<br>
+    <input type="radio" id="_0_3_2" name="0_3_2" value="0_3_2_sim" required="required"> SIM <input type="radio" name="0_3_2" value="0_3_2_nao"> NÃO </p>
+  <p class="text-justify shadow bg-info py-1 mx-3"> 3. Senta-se a partir da posição de deitado: decúbito ventral (deitado de barriga para baixo) ou decúbito dorsal (deitado de barriga para cima).<br>
+    <input type="radio" id="_0_3_3" name="0_3_3" value="0_3_3_sim" required="required"> SIM <input type="radio" name="0_3_3" value="0_3_3_nao"> NÃO </p>
+  <p class="border-light shadow py-1 mx-3" style=""> 4. Começa a deslocar-se com movimento alternado de braço e perna, p.e. rastejar ou gatinhar. <br>
+    <input type="radio" id="_0_3_4" name="0_3_4" value="0_3_4_sim" required="required"> SIM <input type="radio" name="0_3_4" value="0_3_4_nao"> NÃO </p>
+  <p class="text-justify shadow bg-info py-1 mx-3" style=""> 5. Começa a pôr-se em pé (9M), recorrendo ao apoio dos braços.&nbsp;<br>
+    <input type="radio" id="_0_3_5" name="0_3_5" value="0_3_5_sim" required="required"> SIM <input type="radio" name="0_3_5" value="0_3_5_nao"> NÃO </p>
+  <p class="py-1 mx-3 shadow" style=""> 6. Agarra um brinquedo pequeno em cada mão e junta-os (p.e. bater).&nbsp;&nbsp;<br>
+    <input type="radio" id="_0_3_6" name="0_3_6" value="0_3_6_sim" required="required"> SIM <input type="radio" name="0_3_6" value="0_3_6_nao"> NÃO </p>
+  <button onclick="mostraResultado()" class="bg-primary px-1">SUBMETER</button>
+  <p id="resultado" style="" class="text-justify mx-3"></p>
+  <script>
+    function mostraResultado() {
+      const resultado = document.getElementById("resultado")
+      const _0_3_1 = document.getElementById("_0_3_1")
+      const _0_3_2 = document.getElementById("_0_3_2")
+      const _0_3_3 = document.getElementById("_0_3_3")
+      const _0_3_4 = document.getElementById("_0_3_4")
+      const _0_3_5 = document.getElementById("_0_3_5")
+      const _0_3_6 = document.getElementById("_0_3_6")
+      let contSim = 0,
+        contNao = 0
+      _0_3_1.checked ? contSim++ : contNao++
+      _0_3_2.checked ? contSim++ : contNao++
+      _0_3_3.checked ? contSim++ : contNao++
+      _0_3_4.checked ? contSim++ : contNao++
+      _0_3_5.checked ? contSim++ : contNao++
+      _0_3_6.checked ? contSim++ : contNao++
+      if (contSim == 6) {
+        resultado.innerHTML = "Parabéns, o seu bebé evidencia todas as competências esperadas para a sua faixa etária! Continue a estimular a variabilidade na posição de sentado e a mobilidade no chão. A partir dos 8 meses comece a colocar o bebé na posição de pé com suporte. Isto potenciará o seu desenvolvimento motor e as conquistas motoras seguintes!"
+      } else if (contNao == 5 || contNao == 6) {
+        resultado.innerHTML = "Aconselha-se uma avaliação com fisioterapeuta da área do desenvolvimento infantil para dicas específicas e  adequadas ao seu bebé!<br><p>Veja também as nossas dicas: <br>Dica1: Sente o bebé gradualmente com menos suporte no chão e comece a colocar os brinquedos tanto na sua frente mas também de lado para incentivar as rotações do tronco. Isto irá contribuir para um controlo de tronco cada vez maior.<br><br> Dica 2: Incentive atividades em decúbito ventral (posição de barriga para baixo) ou mesmo na posição de gatas com apoio de almofadas ou da sua perna. Nestas posições tente que  alcance brinquedos com uma das mãos enquanto a outra fica apoiada. Afaste os brinquedos e ajude no movimento das pernas (se necessário)para incentivar pequenas deslocações.Isto irá contribuir para aumentar a estabilidade da cintura escapular para uma utilização da mão e do braço mais refinada, posteriormente.<br><br> Dica 3: Comece a colocar o seu bebé na posição de péa partir dos 8 meses em frente ao sofá ou móveis que permitam o apoio dos membros superiores e tronco(barriga) do seu bebe enquanto ele explora uma atividade do seu agrado.<br><br>Dica 4: Na posição de sentado incentive transições de posição (sentado para sentado de lado com apoio de uma mão no chão e depois para o outro lado; deitado para sentado e vice-versa; entre outras ao longo das rotinas e nos momentos de brincadeira."
+      } else if (contNao == 3 || contNao == 4) {
+        resultado.innerHTML = "Dica1: Sente o bebé gradualmente com menos suporte no chão e comece a colocar os brinquedos tanto na sua frente mas também de lado para incentivar as rotações do tronco. Isto irá contribuir para um controlo de tronco cada vez maior.<br><br> Dica 2: Incentive atividades em decúbito ventral (posição de barriga para baixo) ou mesmo na posição de gatas com apoio de almofadas ou da sua perna. Nestas posições tente que  alcance brinquedos com uma das mãos enquanto a outra fica apoiada. Afaste os brinquedos e ajude no movimento das pernas (se necessário)para incentivar pequenas deslocações.Isto irá contribuir para aumentar a estabilidade da cintura escapular para uma utilização da mão e do braço mais refinada, posteriormente.<br><br> Dica 3: Comece a colocar o seu bebé na posição de péa partir dos 8 meses em frente ao sofá ou móveis que permitam o apoio dos membros superiores e tronco(barriga) do seu bebe enquanto ele explora uma atividade do seu agrado."
+      } else {
+        resultado.innerHTML = "Dica1: Sente o bebé gradualmente com menos suporte no chão e comece a colocar os brinquedos tanto na sua frente mas também de lado para incentivar as rotações do tronco. Isto irá contribuir para um controlo de tronco cada vez maior.<br><br> Dica 2: Incentive atividades em decúbito ventral (posição de barriga para baixo) ou mesmo na posição de gatas com apoio de almofadas ou da sua perna. Nestas posições tente que  alcance brinquedos com uma das mãos enquanto a outra fica apoiada. Afaste os brinquedos e ajude no movimento das pernas (se necessário)para incentivar pequenas deslocações.Isto irá contribuir para aumentar a estabilidade da cintura escapular para uma utilização da mão e do braço mais refinada, posteriormente."
+      }
+      resultado.innerHTML += "<p><center><button onClick=location.href=\"6-9-sensoriais.html\">Saltar para as Competências Sensoriais</button></center></p>"
+    }
+  </script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+</body>
+
+</html>
